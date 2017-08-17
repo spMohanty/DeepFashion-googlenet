@@ -11,6 +11,7 @@ sys.path.insert(0, caffe_root + 'python')
 """
 
 import caffe
+caffe.set_mode_gpu()
 
 image_path = "demo_pic.jpg"
 classes = open("labels.txt").readlines()
